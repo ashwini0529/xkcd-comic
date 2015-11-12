@@ -14,4 +14,4 @@ for i in range(1,1603):
 		    	imageSource = div.find('img')['src']
 		    	imageSource = "http://"+imageSource[2:]
 		    	print imageSource
-		    	urllib.urlretrieve(imageSource, each_div.get_text()+".jpg")
+		    	urllib.urlretrieve(imageSource, "("+str(i)+")"+each_div.get_text()+".jpg")
